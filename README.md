@@ -20,4 +20,4 @@
    5-1. target_columns변수 생성하여 데이터에서 새순이라는 단어가 포함되어있는 컬럼만 걸러주는 코드 target_columns =                           train_df.filter(regex="새순").columns를 실행하기                 
    5-2. 새순mean이란 컬럼변수를 만들어 train_df의 target_columns컬럼의 (axis=1 <-가로방향)데이터를 평균내주기
    5-3. 새순std이란 컬럼변수를 만들어 train_df의 target_columns컬럼의 (axis=1 <-가로방향)데이터를 표준편차내주기
-   5-4. 새순diff이란 컬럼변수를 만들어 train_df의 ["2022-11-28 새순"]에서 
+   5-4. 새순diff이란 컬럼변수를 만들어 train_df의 ["2022-11-28 새순"]에서 ["2022-09-01 새순"]을 빼준다.
