@@ -21,3 +21,12 @@
    5-2. 새순mean이란 컬럼변수를 만들어 train_df의 target_columns컬럼의 (axis=1 <-가로방향)데이터를 평균내주기
    5-3. 새순std이란 컬럼변수를 만들어 train_df의 target_columns컬럼의 (axis=1 <-가로방향)데이터를 표준편차내주기
    5-4. 새순diff이란 컬럼변수를 만들어 train_df의 ["2022-11-28 새순"]에서 ["2022-09-01 새순"]을 빼준다.
+   5-5. test도 위 train_df의 과정을 따라해준다.
+6. X, y변수를 설정해주고, AutoML을 돌려 학습을 진행시켜준다. 여기서 모드는 mode="Compete", 평가지표는 rmse로 할것이다.
+7. 이제 대회에 파일을 제출하기 위한 submission변수에 감귤/sample_submission.csv 데이터를 불러와주고, 착과량 자리에 pred를 넣어서
+8. Ensemble_Stacked_trained 의 이름으로 양식을 제출해주면 됀다.
+
+이제 점수를 확인해보자
+0.07276점이 나왔다.
+1등과 별차이가 없는게 1등은 0.07118이다.
+
